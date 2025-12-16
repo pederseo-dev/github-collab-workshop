@@ -1,62 +1,75 @@
-.hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 100px 20px;
+.about-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.profile {
     text-align: center;
+    margin-bottom: 40px;
 }
 
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
+.profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 5px solid #667eea;
 }
 
-.hero p {
-    font-size: 18px;
-    margin-bottom: 25px;
-    color: #eee;
-}
-
-.hero button {
-    background-color: #fff;
-    color: #667eea;
-    border: none;
-    padding: 12px 30px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.skills {
-    padding: 60px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.skills h2 {
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 30px;
+.profile h1 {
+    font-size: 36px;
     color: #222;
 }
 
-.skill-list {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    flex-wrap: wrap;
+.bio {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.skill {
-    background-color: #667eea;
-    color: white;
-    padding: 10px 25px;
-    border-radius: 20px;
+.bio p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.experience, .education {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.experience h2, .education h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #667eea;
+}
+
+.job {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.job:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.job h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.job p {
     font-size: 14px;
-    font-weight: bold;
-}
-
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 32px;
-    }
+    color: #888;
 }
